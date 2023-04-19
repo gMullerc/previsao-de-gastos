@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.uninove</groupId>
+	<artifactId>previsao</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>previsao de dados</name>
+	<description></description>
+	<dependencies>
+		<dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>weka-stable</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/jfree/jfreechart -->
+		<dependency>
+			<!-- https://mvnrepository.com/artifact/org.beryx/awt-color-factory -->
+			<groupId>jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.0.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.beryx</groupId>
+			<artifactId>awt-color-factory</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+	</dependencies>
+</project>
