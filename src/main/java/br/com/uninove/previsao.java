@@ -49,7 +49,7 @@ public class previsao {
 		model.buildClassifier(data);
 
 		for (int i = 1; i <= 12; i++) {
-			double[] valores = { 2022, i }; // Exemplo para previsão dos gastos de cada mês de 2022
+			double[] valores = { 2023, i }; // Exemplo para previsão dos gastos de cada mês de 2022
 
 			// Faz a previsão dos gastos para o mês desejado
 			double prev_gastos = model.classifyInstance(new DenseInstance(1.0, valores));
@@ -59,7 +59,7 @@ public class previsao {
 		}
 
 		// Define os valores das características para o ano desejado
-		double[] valores = { 2022, 1 }; // Exemplo para previsão dos gastos de janeiro de 2022
+		double[] valores = { 2023, 5 }; // Exemplo para previsão dos gastos de janeiro de 2022
 
 		// Cria uma nova instância para teste
 		DenseInstance instance = new DenseInstance(1.0, valores);
@@ -69,14 +69,14 @@ public class previsao {
 		double prev_gastos = model.classifyInstance(instance);
 
 		// Imprime o resultado da previsão
-		System.out.println("Previsão de gastos para o mês 1 do ano 2022: " + prev_gastos);
+		System.out.println("Previsão de gastos para o mês 5 do ano 2023: " + prev_gastos);
 		XYSeriesCollection dataset = new XYSeriesCollection();
 		dataset.addSeries(actual);
 		dataset.addSeries(predicted);
 
 		// Cria o gráfico
-		ChartFrame frame = new ChartFrame("Previsão de Gastos para 2022", ChartFactory.createXYLineChart(
-		    "Previsão de Gastos para 2022", "Mês", "Gastos", dataset, PlotOrientation.VERTICAL,
+		ChartFrame frame = new ChartFrame("Previsão de Gastos para 2023", ChartFactory.createXYLineChart(
+		    "Previsão de Gastos para 2023", "Mês", "Gastos", dataset, PlotOrientation.VERTICAL,
 		    true, true, false));
 
 		// Exibe o gráfico
